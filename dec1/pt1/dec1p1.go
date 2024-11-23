@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("input.txt")
+	file, err := os.Open("../input.txt")
 	errCheck(err)
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
