@@ -14,7 +14,6 @@ func main() {
 	errCheck(err)
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
-
 	codes := []int{}
 	for scanner.Scan() {
 		line := scanner.Text()
@@ -73,7 +72,6 @@ func parseLine(line string) int {
 			}
 		}
 	}
-	fmt.Printf("%d\n", lowIdxDigit*10+highIdxDigit)
 	return lowIdxDigit*10 + highIdxDigit
 }
 
